@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/wave2"
+        android:id="@+id/title_view"
+        android:textAlignment="center"
+        android:text="Pack Your Bag"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btnChooseDate"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="332dp"
+        android:background="@null"
+        android:contentDescription="choose_date_description"
+        android:src="@drawable/calendar_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/title_view"
+        />
+
+
+</RelativeLayout>
